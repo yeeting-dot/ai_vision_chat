@@ -12,9 +12,13 @@
 
 ## 主要数据结构
 RoundThread:抽象类，用于实例化各类缓冲区，是生产-消费模型的主要数据结构
+
 VoiceMess: Struct结构体，存储音频数据，作为生产者将资源给RoundThread<VoiceMess>
+
 RoundThread<std::string>: 实例化文本缓冲区，当声音在portAudio处理中被转换为文本的时候写入此缓冲区；Viewer类读取该缓冲区
+
 SendObject：Struct结构体，存储单条可发送给api大模型的数据，存储单条语音和摄像头截取快照【后续仍需将图片转换为base-64】
+
 RoundThread<SendObject>: 实例化SendObject缓冲区，有Viewer捕捉摄像头数据写入，由Send类读出并通过窗口显示图片和文本
 
 ## 主要架构
