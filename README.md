@@ -42,5 +42,5 @@ AudioTranslate--write-->TextCache
 Viewer--read-->TextCache
 Viewer--write-->SendObjectCache
 Send--read-->SendObjectCacheS
-Send--Show
+Send-->Show["窗口显示图像和文本"]
 ~~~
