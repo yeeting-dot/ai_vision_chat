@@ -1,6 +1,6 @@
 # ai_vision_chat
 七牛云——6月12日选题——Ai视觉助手
-> demo示例：通过网盘分享的文件:[ai视觉助手.mp4](https://pan.baidu.com/s/1CqcQO3m614PpZvL9BxP6aQ?pwd=i3h3 提取码: i3h3)
+> demo示例：通过网盘分享的文件，提取码: kvam:[ai视觉助手.mp4](https://pan.baidu.com/s/1yYprAENax5Ewo_ig7BmVVA?pwd=kvam)
 ## 引用库
 库的管理方式——通过vcpkg安装并通过```vcpkg integrate install```命令继承到visualstudio，还需再CmakePreset.json的x64-debug中设置cmake构建文件路径
 1. opencv库【摄像头捕捉】
