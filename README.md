@@ -25,3 +25,22 @@ RoundThread<SendObject>: 实例化SendObject缓冲区，有Viewer捕捉摄像头
 多线程并行 + 循环处理 + 回调执行
 
 ## 流程图示
+
+~~~mermaid
+graph LR
+VoiceTake["音频采集"]
+VoiceMessCache["音频信息缓存"]
+AudioTranslate["音频翻译"]
+TextCache["文本缓存"]
+Viewer["摄像头采集"]
+SendObjectCache["图像 + 文本缓存"]
+Send["发送Http（暂时为显示）"]
+
+VoiceTake--write-->VoiceMessCache
+AudioTranslate--read-->VoiceMessCache
+AudioTranslate--write-->TextCache
+Viewer--read-->TextCache
+Viewer--write-->SendObjectCache
+Send--read-->SendObjectCacheS
+Send--Show
+~~~
