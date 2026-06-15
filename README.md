@@ -8,7 +8,7 @@
 3. whisper库【语音转录】
 4. [外部资源，语音转录本地模型](https://huggingface.co/ggerganov/whisper.cpp/blob/main/ggml-small.bin)
 
-> 库安装后需要放置在Resources文件夹下
+> 资源安装后需要放置在Resources文件夹下
 
 ## 主要数据结构
 RoundThread:抽象类，用于实例化各类缓冲区，是生产-消费模型的主要数据结构
